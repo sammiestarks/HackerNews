@@ -13,7 +13,7 @@
             xhttp.send();
         }
 
-        /*function yHandler(){
+        function yHandler(){
             // Watch video for line by line explanation of the code
             // http://www.youtube.com/watch?v=eziREnZPml4
             var rap = document.getElementById('wrap');
@@ -27,7 +27,7 @@
             var status = document.getElementById('status');
             status.innerHTML = contentHeight+" | "+y;
         }
-        window.onscroll = yHandler;*/
+        window.onscroll = yHandler;
     </script>
     <style>
         div#status{position:fixed; font-size:24px;}
@@ -38,9 +38,9 @@
 <body>
 <div id="status">0 | 0</div>
 <div id="wrap"><img src="temp9.jpg">
-
+    <p id="demo">Let AJAX change this text.</p>
+    <button type="button" onclick="loadDoc()">Change Content</button>
 </div>
-<p id="demo">Let AJAX change this text.</p>
-<button type="button" onclick="loadDoc()">Change Content</button>
+
 </body>
 </html>
